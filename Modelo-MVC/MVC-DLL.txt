@@ -1,0 +1,29 @@
+DLL MVC
+
+*Create the project
+	-Create Class Library (.NET Framework)
+		Name of the project: CapaVista
+		Solution Name: ProjectName
+
+*Add Layers (Do this to  add the layers you need [CapaModelo, CapaControlador])
+	-add -> new project->Class Library (.NET Framework)
+	-Delete the class inside the layers
+	-Build the solution
+
+*Create References between layers
+		-> = calls or reference
+		-Vista -> Controlador
+		-Controlador -> Modelo
+	-Compile soluton
+
+* Create class
+	// all class must be public
+	Modelo {	//all connection to db
+		-Conexion //connection to db
+		-Sentencias //CRUD
+		}	
+	Controlador{	//query's
+		-Controlador
+		-Global Variables (optional)
+		}
+*Create MDI in CapaVista
